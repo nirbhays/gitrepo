@@ -63,13 +63,7 @@ class ApiGatewayToService:
 
         return self.api_id
 
-    def add_rest_resource(self, parent_id, resource_path):
-        """
-        Adds a resource to a REST API.
-
-        :param parent_id: The ID of the parent resource.
-        :param resource_path: The path of the new resource, relative to the parent.
-        :return: The ID of the new resource.
+  
         """
         try:
             result = self.apig_client.create_resource(
